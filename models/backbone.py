@@ -2,11 +2,7 @@
 """
 Backbone modules.
 """
-from collections import OrderedDict
 
-import torch
-import torch.nn.functional as F
-import torchvision
 from torch import nn
 
 import models.vgg_ as models

@@ -1,3 +1,22 @@
+
+This is a fork of the original [P2PNet](https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet) repository, updated to work with Python 3.12 and PyTorch 2.8.0.
+
+Other modifications include:
+
+- Use `uv` for dependency management.
+- Updated `requirements.txt` with pinned versions.
+- The `run_tests.py` script has new arguments:
+  - `--device` to specify the device for evaluation, either `cuda` or `cpu`.
+  - `--infile` to specify the input image file path.
+  - `--threshold` to set the threshold for filtering predictions.
+- The `run_tests.py` script now falls back to CPU inference if no GPU is
+  available or an OOM error occurs.
+
+
+Original README content follows:
+
+-----
+
 # P2PNet (ICCV2021 Oral Presentation)
 
 This repository contains codes for the official implementation in PyTorch of **P2PNet** as described in [Rethinking Counting and Localization in Crowds: A Purely Point-Based Framework](https://arxiv.org/abs/2107.12746).
